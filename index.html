@@ -12,10 +12,12 @@
             <input type="search" name="search" placeholder="Текст поиска">
             <input type="submit" value="Найти">
         </form>
-        <a class="login" href="#">Войти</a>
-        <a class="compare" href="#">Сравнить</a>
-        <a class="cart" href="#">Корзина</a>
-        <a class="catlogue" href="#">Каталог товаров</a>
+        <ul>
+            <a class="login" href="#">Войти</a>
+            <a class="compare" href="#">Сравнить</a>
+            <a class="cart" href="#">Корзина</a>
+        </ul>
+        <a class="catalog" href="catalog.html">Каталог товаров</a>
         <ul>
             <li><a class="delivery" href="#">Доставка</a></li>
             <li><a class="guarantee" href="#">Гарантия</a></li>
@@ -27,7 +29,7 @@
             <div class="slider-items">
                 <div class="slider-item-1">
                     <img src="квадрокоптер" alt="Квадрокоптер с лазером">
-                    <P>Порхает как бабочка, жалит как пчела!</p>
+                    <h2>Порхает как бабочка, жалит как пчела!</h2>
                     <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                     <a class="more" href="#">Подробнее</a>
                     <table>
@@ -107,7 +109,7 @@
                 </div>
             </div>
         </section>
-        <section class="rare-product">
+        <section class="delivery-on-order">
             <img>
             <b>Доставим редкий товар под заказ</b>
         </section>
@@ -124,8 +126,8 @@
         </section>
         <section class="contacts">
             <h2 class="contacts-title">Контакты</h2>
-            <span>Вы можете забрать товар сами, заехав в наш офис. 
-                Заодно сможете проверить работоспособность покупки. </span>
+            <p>Вы можете забрать товар сами, заехав в наш офис. 
+                Заодно сможете проверить работоспособность покупки. </p>
            <h3>Интернет-магазин «Девайс»</h3>
            <address class="contacts-address">
             <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -136,32 +138,33 @@
                <li class="shedule-item">пн—пт: с 10:00 до 22:00</li>
                <li class="shedule-item">сб—вс: с 10:00 до 19:00</li>
            </ul>
-           <a class="write-to-us">Напишите нам</a>
+           <a class="write-to-us" href="#">Напишите нам</a>
         </section>
         <section class="newsletter-subscription">
             <h2>Подпишитесь на рассылку</h2>
-            <span>Еженедельный дайджест с обзорами новинок,
-                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</span>
+            <p>Еженедельный дайджест с обзорами новинок,
+                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+            </p>
             <form class="newsletter-subscription-form" action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="e-mail" placeholder="Ваш e-mail" id="e-mail">
                 <input type="submit" value="Подписаться">
-                <label for="e-mail">Это бесплатно</label>
+                <label for="e-mail" class="visually-hidden">Подписка</label>
+                <span>Это бесплатно</span>
             </form>
         </section>
     </main>
     <footer class="page-footer">
         <img class="logo" src="" alt="Логотип интернет-магазина Девайс">
-        <section class="footer-address">
-            <h3 class="visually-hidden">Адрес</h3>
-            <span>Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</span>
-        </section>
-        <section>
-            <ul>
-                <li><a class="delivery" href="#">Доставка</a></li>
-                <li><a class="guarantee" href="#">Гарантия</a></li>
-                <li><a class="contacts" href="#">Контакты</a></li>
-            </ul>
-        </section>
+        <h3 class="visually-hidden">Адрес</h3>
+        <address>Санкт-Петербург, набережная
+                <br>
+                реки Карповки, 5, литера П.
+            </address>
+        <ul>
+            <li><a class="delivery" href="#">Доставка</a></li>
+             <li><a class="guarantee" href="#">Гарантия</a></li>
+             <li><a class="contacts" href="#">Контакты</a></li>
+        </ul>
         <section class="footer-phone">
             <h3 class="visually-hidden">Телефон</h3>
             <a class="contasts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
