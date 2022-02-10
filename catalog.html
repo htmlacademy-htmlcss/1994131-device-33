@@ -3,6 +3,7 @@
 <head>
  <meta charset="utf-8">
  <title>Каталог</title>
+ <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header class="page-header">
@@ -13,21 +14,21 @@
             <input type="submit" value="Найти">
         </form>
         <ul>
-            <li><a class="user-page" href="#">Коля Петухов</a></li>
-            <li><a class="logout" href="#">Выйти</a></li>
-            <li><a class="compare" href="#">Сравнить</a></li>
-            <li><a class="cart" href="#">Корзина</a></li>
-            <li><a class="catlogue" href="#">Каталог товаров</a></li>
+            <li><a class="user-page nav-link" href="#">Коля Петухов</a></li>
+            <li><a class="logout nav-link" href="#">Выйти</a></li>
+            <li><a class="compare nav-link" href="#">Сравнить</a></li>
+            <li><a class="cart nav-link" href="#">Корзина</a></li>
+            <li><a class="catalog nav-link" href="#">Каталог товаров</a></li>
         </ul>  
         <ul>
-            <li><a class="delivery" href="#">Доставка</a></li>
-            <li><a class="guarantee" href="#">Гарантия</a></li>
-            <li><a class="contacts" href="#">Контакты</a></li>
+            <li><a class="delivery info-link" href="#">Доставка</a></li>
+            <li><a class="guarantee info-link" href="#">Гарантия</a></li>
+            <li><a class="contacts info-link" href="#">Контакты</a></li>
         </ul>
         </header>
     <main class="main-inner">
         <header class="inner-header">
-            <h1>Моноподы для селфи</h1>
+            <h1 class="products-category-page">Моноподы для селфи</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -41,11 +42,11 @@
             </ul>
         </header>
         <section class="filters">
-            <h2 class="filter-bar">Фильтр:</h2>
+            <h2 class="filter-bar interface-bar">Фильтр:</h2>
             <form class="catalogue-filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="catalogue-filter-group">
                     <legend class="catalogue-filter-title">Цвет</legend>
-                    <ul>
+                    <ul class="color-selection">
                         <li> 
                             <label class="control">
                                 <input class="control-input" type="checkbox" name="black" checked>
@@ -80,7 +81,7 @@
                 </fieldset>
                 <fieldset class="catalogue-filter-group">
                     <legend class="catalogue-filter-title">Bluetooth</legend>
-                    <ul>
+                    <ul class="bluetooth-selection"> 
                         <li> 
                             <label class="control">
                                 <input class="control-input" type="radio" name="bluetooth" checked>
@@ -99,7 +100,7 @@
             </form>
         </section>
         <section class="products-catalogue">
-            <h2 class="sorting-bar">Сортировка:</h2>
+            <h2 class="sorting-bar interface-bar">Сортировка:</h2>
             <select class="select-control">
                 <option value="popular">Популярные</option>
             </select>
@@ -145,7 +146,7 @@
         <button class="button show-more">Загрузить ещё</button>
         <ol class="pagination-bar">
             <li class="pagination-bar-item">
-                <a class="pagination-bar-link pagination-prev" href="#">
+                <a class="pagination-bar-link-prev" href="#">
                     <span>Назад</span>
                 </a>
             </li>
@@ -165,7 +166,7 @@
                 <a class="pagination-bar-link" href="#">15</a>
             </li>
             <li class="pagination-bar-item">
-                <a class="pagination-bar-link pagination-prev" href="#">
+                <a class="pagination-bar-link-prev" href="#">
                     <span>Вперёд</span>
                 </a>
             </li>
@@ -175,10 +176,10 @@
         <img class="logo" src="images/content/logo_yellow.svg"  width="145" height="36" alt="Логотип интернет-магазина Девайс">
         <section class="footer-address">
             <h3 class="visually-hidden">Адрес</h3>
-            <span>Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</span>
+            <span class="foter-address">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</span>
         </section>
         <section>
-            <ul>
+            <ul class="footer-nav">
                 <li><a class="delivery" href="#">Доставка</a></li>
                 <li><a class="guarantee" href="#">Гарантия</a></li>
                 <li><a class="contacts" href="#">Контакты</a></li>
@@ -186,7 +187,7 @@
         </section>
         <section class="footer-phone">
             <h3 class="visually-hidden">Телефон</h3>
-            <a class="contaсts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+            <a class="footer-contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
         </section>
         <section class="footer-social">
             <h3 class="visually-hidden">Социальные сети</h3>
@@ -207,7 +208,7 @@
                     </a>
                 </li>
             </ul>
-            <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html <br>academy</a>
         </section>
     </footer>
 </body>
