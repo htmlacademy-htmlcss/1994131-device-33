@@ -55,11 +55,12 @@ body{
     color:black;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 .h2{
     font-family: Raleway, sans-serif;
-    font-family: Rubik, sans-serif; 800;
+    font-weight: 800;
     font-size: 50px;
     line-height: 50px;
     color:black;
@@ -89,14 +90,6 @@ body{
     text-decoration: none;
 }
 
-/* .highlighted-link-container{
-    width: 220px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .highlighted-link{
     font-family: Raleway;
     font-weight: 800;   
@@ -107,21 +100,47 @@ body{
     text-transform: uppercase;
     color:black;
     text-decoration: none;
-    background-color: #FFE17F;
+    position: relative;
+    z-index: 1;
 }
 
-/* .highlighted-link-background{
-    background: #FFE17F;
+.highlighted-link::before{
     position: absolute;
-    height: 20%;
-} */
+    content: '';
+    background-color: #FFE17F;
+    left: -20%;
+    top: 30%;
+    bottom: 30%;
+    width: 120%;
+    z-index: -1;
+}
+
+.hl-1{
+    margin-left:25%;
+}
+
+.hl-1::before{
+    left:-25%;
+    width:150%;
+}
+
+.img-on-order{
+    width:125px;
+    height:100px;
+    background-color:#FFE17F;
+    display:flex;
+}
+
+.icon-on-order{
+    margin:auto;
+   
+}
 
 .on-order{
     font-family: Raleway;
     font-weight: 800;
     font-size: 20px;
     line-height: 23px;
-    text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color:black;
