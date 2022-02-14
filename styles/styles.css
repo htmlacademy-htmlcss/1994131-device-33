@@ -95,33 +95,41 @@ body{
     font-weight: 800;   
     line-height: 21px;
     text-align: center;
-    align-self: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color:black;
     text-decoration: none;
     position: relative;
-    z-index: 1;
+    padding: 14px 0 15px;
 }
+
+/* .highlighted-link:hover {
+    background-color: #FFE17F;
+} */
 
 .highlighted-link::before{
     position: absolute;
     content: '';
     background-color: #FFE17F;
-    left: -20%;
-    top: 30%;
-    bottom: 30%;
-    width: 120%;
+    top: 42%;
+    height: 8px;
+    width: 100%;
     z-index: -1;
 }
 
-.hl-1{
-    margin-left:25%;
+.highlighted-link-more{
+    display:block;
+    width:220px;
 }
 
-.hl-1::before{
-    left:-25%;
-    width:150%;
+.highlighted-link-about{
+    display:block;
+    width:270px;
+}
+
+.highlighted-link-write-to-us{
+    display:block;
+    width:259px;
 }
 
 .img-on-order{
