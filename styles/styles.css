@@ -115,6 +115,8 @@ body{
     height: 8px;
     width: 100%;
     z-index: -1;
+    right:0;
+    left:0;
 }
 
 .highlighted-link-more{
