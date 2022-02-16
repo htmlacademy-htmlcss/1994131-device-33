@@ -36,7 +36,19 @@ body{
   line-height: 30px;
   background-color:white;
   color: #444444;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /* width: 1440px; */
 }
+
+.page-name{
+    display:none;
+}
+
+/* .visually-hidden{
+    visibility: hidden;
+} */
 
 .page-header{
     background: #FFE17F;
@@ -47,6 +59,8 @@ body{
 .nav-link{
     color:black;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 .info-link{
@@ -64,6 +78,8 @@ body{
     font-size: 50px;
     line-height: 50px;
     color:black;
+    margin:0;
+    padding:0;
 }
 
 .quadrocopter-properties-value{
@@ -124,7 +140,7 @@ body{
     width:220px;
 }
 
-.highlighted-link-about{
+.about .highlighted-link-about{
     display:block;
     width:270px;
 }
@@ -134,19 +150,7 @@ body{
     width:259px;
 }
 
-.img-on-order{
-    width:125px;
-    height:100px;
-    background-color:#FFE17F;
-    display:flex;
-}
-
-.icon-on-order{
-    margin:auto;
-   
-}
-
-.on-order{
+.delivery-on-order{
     font-family: Raleway;
     font-weight: 800;
     font-size: 20px;
@@ -154,6 +158,28 @@ body{
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color:black;
+    display:flex;
+    width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.delivery-on-order-text{
+    display:block;
+    width:910px;
+    padding-top: 40px;
+    padding-bottom:40px;
+}
+
+.delivery-on-order-image{
+    display:flex;
+    width:125px;
+    height:100px;
+    background-color: #FFE17F;
+}
+
+.delivery-on-order-icon{
+    margin:auto;
 }
 
 .transport-companies-item{
@@ -270,6 +296,7 @@ body{
 .page-footer{
     background-color:#444444;
     color:white;
+    font-size: 16px;
 }
 
 .footer-address{
@@ -283,4 +310,186 @@ body{
 .htmlacademy-link{
     color:#FFE17F;
     text-decoration: none;
+}
+
+.html{
+    height:100%;
+}
+
+.main-container{
+    flex-grow: 1;
+}
+
+.user-menu{      /* нужно отделить один из элементов списка */
+    display: flex;
+    width: 1040px;
+    margin: 0 auto;
+    justify-content: space-between;    
+}
+
+.catalog-navigation{
+    display: flex;
+    width: 1040px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/* .user-menu-list:nth-child(1){
+    margin-right: 177px;
+} */
+
+.page-logo{
+    display:flex;
+    margin: 0 auto;
+    width: 1040px;
+}
+
+.slider-wrapper{
+    display:flex;
+    margin: 0 auto;
+    width: 1160px;
+    justify-content: space-between;
+}
+
+.slider-images{
+    width: 560px;
+}
+
+.slider-images-description{
+    width: 560px;
+}
+
+.product-category-list{
+    display:flex;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.product-category-item{
+    width:160px;
+}
+
+.product-category-item-icon{
+    background-color: #FFE17F;
+    width:160px;
+    margin:0;
+    padding:0;
+}
+
+.delivery-slider-wrapper{
+    display:flex;
+    width: 1160px;
+    margin:0 auto;
+    justify-content: space-between;
+}
+  
+.delivery-slider-text{
+    width: 452px;
+}
+  
+.delivery-slider-buttons{
+    width:287px;
+}
+
+.about-contacts-wrapper{
+    display:flex;
+    width: 1160px;
+    margin:0 auto;
+    justify-content: space-between;
+}
+
+.about{
+    width:520px;
+}
+
+.contacts{
+    width:532px;
+}
+
+.newsletter-subscription-text{
+    display:flex;
+    width:1160px;
+    margin:0 auto;
+    justify-content:space-between;
+}
+  
+.newsletter-subscription-highlight{
+    width:348px;
+}
+  
+.newsletter-subscription-article{
+    width:560px;
+}
+  
+.newsletter-subscription-form-container{
+    display:flex;
+    width:1160px;
+    margin:0 auto;
+    justify-content:space-between;
+}
+  
+.newsletter-subscription-form{
+    width:810px;
+}
+  
+.newsletter-subscription-free{
+    display:block;
+    width:128px;
+}
+
+.page-footer-logo{
+    display:flex;
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.footer-address-nav-phone-container{
+    display:flex;
+    width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer-address{
+    width:239px;
+}
+
+.footer-nav{
+    width:444px;
+}
+
+.footer-phone{
+    width:174px;
+}
+
+.footer-social-container{
+    display:flex;
+    width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.footer-social{
+    width:150px;
+    margin-left:auto;
+}
+
+.htmlacademy-link{
+    width:115px;
+    margin-left:auto;
+}
+
+.logo-link{
+    display:flex;
+      margin: 0 auto;
+      width: 1040px;
+}
+  
+.inner-user-menu{
+    display: flex;
+      width: 1040px;
+      margin: 0 auto;
+      justify-content: space-between;
 }
