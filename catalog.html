@@ -30,13 +30,33 @@
                 <li>
                     <a class="cart nav-link" href="#">Корзина</a>
                 </li>
-                <li>
-                    <a class="catalog nav-link" href="#">Каталог товаров</a>
-                </li>
             </ul>
         </div>
         <div class="catalog-navigation">
             <ul class="topmenu">
+                <li class="topmenu-catalog">
+                    <a class="catalog info-link" href="">Каталог товаров</a>
+                    <ul class="catalog-submenu-list">
+                        <li class="catalog-submenu-item">
+                            <a href="">Виртуальная реальность</a>
+                        </li>
+                        <li class="catalog-submenu-item">
+                            <a href="">Моноподы для cелфи</a>
+                        </li>
+                        <li class="catalog-submenu-item">
+                            <a href="">Экшн-камеры</a>
+                        </li>
+                        <li class="catalog-submenu-item">
+                            <a href="">Фитнес-браслеты</a>
+                        </li>
+                        <li class="catalog-submenu-item">
+                            <a href="">Умные часы</a>
+                        </li>
+                        <li class="catalog-submenu-item">
+                            <a href="">Квадрокоптеры</a>
+                        </li>
+                    </ul>
+                </li>
                 <li>
                     <a class="delivery info-link" href="#">Доставка</a>
                 </li>
@@ -135,13 +155,17 @@
                         <select class="select-control">
                             <option value="popular">Популярные</option>
                         </select>
+                        <div>
+                            <button>page-up</button>
+                            <button>page-down</button>
+                        </div>
                     </section>
                     <ul class="product-card-list">
                         <li class="product-card-item">
                             <a class="product-card-link" href="#">
                                 <figure>
-                                    <img class="product-card-image" src="images/content/product-1.jpg" width="360" height="380"
-                                        alt="Телескопическая селфи-палка с тонкой ручкой">
+                                    <img class="product-card-image" src="images/content/product-1.jpg" width="360"
+                                        height="380" alt="Телескопическая селфи-палка с тонкой ручкой">
                                 </figure>
                                 <h3 class="product-card-title">Любительская селфи-палка</h3>
                             </a>
@@ -150,8 +174,8 @@
                         <li class="product-card-item">
                             <a class="product-card-link" href="#">
                                 <figure>
-                                    <img class="product-card-image" src="images/content/product-2.jpg" width="360" height="380"
-                                        alt="Складывающаяся селфи-палка с кнопкой для фото">
+                                    <img class="product-card-image" src="images/content/product-2.jpg" width="360"
+                                        height="380" alt="Складывающаяся селфи-палка с кнопкой для фото">
                                 </figure>
                                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                             </a>
@@ -160,8 +184,8 @@
                         <li class="product-card-item">
                             <a class="product-card-link" href="#">
                                 <figure>
-                                    <img class="product-card-image" src="images/content/product-3.jpg" width="360" height="380"
-                                        alt="Селфи-палка с ручкой из непотопляемого материала">
+                                    <img class="product-card-image" src="images/content/product-3.jpg" width="360"
+                                        height="380" alt="Селфи-палка с ручкой из непотопляемого материала">
                                 </figure>
                                 <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                             </a>
@@ -170,8 +194,8 @@
                         <li class="product-card-item">
                             <a class="product-card-link" href="#">
                                 <figure>
-                                    <img class="product-card-image" src="images/content/product-4.jpg" width="360" height="380"
-                                        alt="Селфи-палка с ручкой в виде руки">
+                                    <img class="product-card-image" src="images/content/product-4.jpg" width="360"
+                                        height="380" alt="Селфи-палка с ручкой в виде руки">
                                 </figure>
                                 <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                             </a>
@@ -179,33 +203,27 @@
                         </li>
                     </ul>
                     <button class="button show-more">Загрузить ещё</button>
-                    <ol class="pagination-bar">
-                        <li class="pagination-bar-item">
-                            <a class="pagination-bar-link-prev" href="#">
-                                <span>Назад</span>
-                            </a>
-                        </li>
-                        <li class="pagination-bar-item">
-                            <a class="pagination-bar-link" href="#">1</a>
-                        </li>
-                        <li class="pagination-bar-item">
-                            <a class="pagination-bar-link" href="#">2</a>
-                        </li>
-                        <li class="pagination-bar-item">
-                            <a class="pagination-bar-link" href="#">3</a>
-                        </li>
-                        <li class="pagination-bar-item">
-                            <a class="pagination-bar-link" href="#">...</a>
-                        </li>
-                        <li class="pagination-bar-item">
-                            <a class="pagination-bar-link" href="#">15</a>
-                        </li>
-                        <li class="pagination-bar-item">
-                            <a class="pagination-bar-link-prev" href="#">
-                                <span>Вперёд</span>
-                            </a>
-                        </li>
-                    </ol>
+                    <div class="pagination-bar-container">
+                        <a class="pagination-bar-link-prev" href="#">Назад</a>
+                        <ol class="pagination-bar">
+                            <li class="pagination-bar-item">
+                                <a class="pagination-bar-link" href="#">1</a>
+                            </li>
+                            <li class="pagination-bar-item">
+                                <a class="pagination-bar-link" href="#">2</a>
+                            </li>
+                            <li class="pagination-bar-item">
+                                <a class="pagination-bar-link" href="#">3</a>
+                            </li>
+                            <li class="pagination-bar-item">
+                                <a class="pagination-bar-link" href="#">...</a>
+                            </li>
+                            <li class="pagination-bar-item">
+                                <a class="pagination-bar-link" href="#">15</a>
+                            </li>
+                        </ol>
+                        <a class="pagination-bar-link-prev" href="#">Вперёд</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -214,10 +232,10 @@
 
 
 
-    
+
     <footer class="page-footer">
         <figure class="page-footer-logo">
-            <img class="logo" src="images/content/logo_yellow.svg" width="145" height="36"
+            <img class="logo" src="images/content/logo-yellow.svg" width="145" height="36"
                 alt="Логотип интернет-магазина Девайс">
         </figure>
         <div class="footer-address-nav-phone-container">
