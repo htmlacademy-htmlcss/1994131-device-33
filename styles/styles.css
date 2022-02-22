@@ -40,6 +40,8 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
   /* width: 1440px; */
 }
 
@@ -143,6 +145,13 @@ body{
     padding: 0;
 }
 
+.slider-description{
+    display: flex;
+    width: 560px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .h2{
     font-family: Raleway, sans-serif;
     font-weight: 800;
@@ -167,6 +176,50 @@ body{
     font-size: 16px;
     line-height: 30px;
     color:inherit;
+}
+
+.quadrocopter-properties{
+    border-spacing: 20px 12px;
+}
+
+.smart-watch-properties-value{
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+    color:black;
+}
+
+.smart-watch-properties-header{
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color:inherit;
+}
+
+.smart-watch-properties{
+    border-spacing: 0 12px;
+}
+
+.selfie-properties-value{
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+    color:black;
+}
+
+.selfie-properties-header{
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color:inherit;
+}
+
+.selfie-properties{
+    border-spacing: 40px 12px;
 }
 
 .category-item-link{
@@ -491,19 +544,17 @@ body{
     width: 1040px;
 }
 
-.slider-container{
-    display:flex;
-    margin: 0 auto;
-    margin-bottom: 108px;
+.slider-slide{
+    display: flex;
+    justify-content: space-between;
 }
 
-.slider-images{
-    width: 560px;
-}
 
-.slider-images-description{
-    width: 560px;
-}
+
+
+
+
+
 
 .product-category{
     margin-bottom: 70px;
